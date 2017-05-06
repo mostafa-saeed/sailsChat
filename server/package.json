@@ -1,0 +1,30 @@
+{
+  "name": "sailsChat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a chat application based on Sails JS",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "include-all": "~0.1.6",
+    "jsonwebtoken": "^7.4.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "rc": "1.0.1",
+    "sails": "~0.12.3",
+    "sails-disk": "~0.10.9",
+    "sails-mongo": "^0.12.2"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/sailsChat.git"
+  },
+  "author": "Mostafa Saeed",
+  "license": "MIT"
+}

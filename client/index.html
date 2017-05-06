@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sails Chat</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+		<div class="main"></div>
+        <script id="message-template" type="text/x-handlebars-template">
+        {{#this}}
+        <div class="answer {{pos}}">
+          <div class="avatar">
+            <img src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="{{from.username}}">
+            <div class="status offline"></div>
+          </div>
+          <div class="name">{{from.username}}</div>
+          <div class="text">
+            {{text}}
+          </div>
+          <div class="time">{{createdAt}}</div>
+        </div>
+        {{/this}}
+        </script>
+		<script src="assets/js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="assets/js/handlebars.js"></script>
+		<script src="assets/js/director.js"></script>
+		<script src="config.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
